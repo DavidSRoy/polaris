@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021C98952AC34F3E00F6BEBD /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98942AC34F3E00F6BEBD /* ListItem.swift */; };
+		021C98972AC34FAB00F6BEBD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98962AC34FAB00F6BEBD /* ListView.swift */; };
+		021C98992AC34FCE00F6BEBD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98982AC34FCE00F6BEBD /* ListViewModel.swift */; };
+		021C989B2AC3679F00F6BEBD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C989A2AC3679F00F6BEBD /* ListItemView.swift */; };
+		021C989E2AC367F300F6BEBD /* ListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C989D2AC367F300F6BEBD /* ListItemViewModel.swift */; };
+		02D8D8D32ABE423200E01A45 /* PolarisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8D22ABE423200E01A45 /* PolarisApp.swift */; };
+		02D8D8D52ABE423200E01A45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8D42ABE423200E01A45 /* ContentView.swift */; };
+		02D8D8D72ABE423600E01A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D8D8D62ABE423600E01A45 /* Assets.xcassets */; };
+		02D8D8DB2ABE423600E01A45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D8D8DA2ABE423600E01A45 /* Preview Assets.xcassets */; };
+		02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8E42ABE423700E01A45 /* PolarisTests.swift */; };
+		02D8D8EF2ABE423700E01A45 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */; };
+		02D8D8F12ABE423700E01A45 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02D8D8E12ABE423700E01A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D8D8CE2ABE423200E01A45;
+			remoteInfo = Polaris;
+		};
+		02D8D8EB2ABE423700E01A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D8D8CE2ABE423200E01A45;
+			remoteInfo = Polaris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021C98942AC34F3E00F6BEBD /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		021C98962AC34FAB00F6BEBD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		021C98982AC34FCE00F6BEBD /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		021C989A2AC3679F00F6BEBD /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		021C989D2AC367F300F6BEBD /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
+		02D8D8CF2ABE423200E01A45 /* Polaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D8D8D22ABE423200E01A45 /* PolarisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisApp.swift; sourceTree = "<group>"; };
+		02D8D8D42ABE423200E01A45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02D8D8D62ABE423600E01A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02D8D8D82ABE423600E01A45 /* Polaris.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Polaris.entitlements; sourceTree = "<group>"; };
+		02D8D8DA2ABE423600E01A45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02D8D8E02ABE423700E01A45 /* PolarisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D8D8E42ABE423700E01A45 /* PolarisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisTests.swift; sourceTree = "<group>"; };
+		02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
+		02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02D8D8CC2ABE423200E01A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8DD2ABE423700E01A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8E72ABE423700E01A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021C98932AC34F2400F6BEBD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				021C98962AC34FAB00F6BEBD /* ListView.swift */,
+				021C98982AC34FCE00F6BEBD /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		021C989C2AC367D700F6BEBD /* ListItem */ = {
+			isa = PBXGroup;
+			children = (
+				021C98942AC34F3E00F6BEBD /* ListItem.swift */,
+				021C989A2AC3679F00F6BEBD /* ListItemView.swift */,
+				021C989D2AC367F300F6BEBD /* ListItemViewModel.swift */,
+			);
+			path = ListItem;
+			sourceTree = "<group>";
+		};
+		02D8D8C62ABE423200E01A45 = {
+			isa = PBXGroup;
+			children = (
+				02D8D8D12ABE423200E01A45 /* Polaris */,
+				02D8D8E32ABE423700E01A45 /* PolarisTests */,
+				02D8D8ED2ABE423700E01A45 /* PolarisUITests */,
+				02D8D8D02ABE423200E01A45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02D8D8D02ABE423200E01A45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8CF2ABE423200E01A45 /* Polaris.app */,
+				02D8D8E02ABE423700E01A45 /* PolarisTests.xctest */,
+				02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02D8D8D12ABE423200E01A45 /* Polaris */ = {
+			isa = PBXGroup;
+			children = (
+				021C989C2AC367D700F6BEBD /* ListItem */,
+				021C98932AC34F2400F6BEBD /* List */,
+				02D8D8D22ABE423200E01A45 /* PolarisApp.swift */,
+				02D8D8D42ABE423200E01A45 /* ContentView.swift */,
+				02D8D8D62ABE423600E01A45 /* Assets.xcassets */,
+				02D8D8D82ABE423600E01A45 /* Polaris.entitlements */,
+				02D8D8D92ABE423600E01A45 /* Preview Content */,
+			);
+			path = Polaris;
+			sourceTree = "<group>";
+		};
+		02D8D8D92ABE423600E01A45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8DA2ABE423600E01A45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02D8D8E32ABE423700E01A45 /* PolarisTests */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8E42ABE423700E01A45 /* PolarisTests.swift */,
+			);
+			path = PolarisTests;
+			sourceTree = "<group>";
+		};
+		02D8D8ED2ABE423700E01A45 /* PolarisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */,
+				02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */,
+			);
+			path = PolarisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02D8D8CE2ABE423200E01A45 /* Polaris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D8D8F42ABE423700E01A45 /* Build configuration list for PBXNativeTarget "Polaris" */;
+			buildPhases = (
+				02D8D8CB2ABE423200E01A45 /* Sources */,
+				02D8D8CC2ABE423200E01A45 /* Frameworks */,
+				02D8D8CD2ABE423200E01A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polaris;
+			productName = Polaris;
+			productReference = 02D8D8CF2ABE423200E01A45 /* Polaris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02D8D8DF2ABE423700E01A45 /* PolarisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D8D8F72ABE423700E01A45 /* Build configuration list for PBXNativeTarget "PolarisTests" */;
+			buildPhases = (
+				02D8D8DC2ABE423700E01A45 /* Sources */,
+				02D8D8DD2ABE423700E01A45 /* Frameworks */,
+				02D8D8DE2ABE423700E01A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02D8D8E22ABE423700E01A45 /* PBXTargetDependency */,
+			);
+			name = PolarisTests;
+			productName = PolarisTests;
+			productReference = 02D8D8E02ABE423700E01A45 /* PolarisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02D8D8E92ABE423700E01A45 /* PolarisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D8D8FA2ABE423700E01A45 /* Build configuration list for PBXNativeTarget "PolarisUITests" */;
+			buildPhases = (
+				02D8D8E62ABE423700E01A45 /* Sources */,
+				02D8D8E72ABE423700E01A45 /* Frameworks */,
+				02D8D8E82ABE423700E01A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02D8D8EC2ABE423700E01A45 /* PBXTargetDependency */,
+			);
+			name = PolarisUITests;
+			productName = PolarisUITests;
+			productReference = 02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02D8D8C72ABE423200E01A45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					02D8D8CE2ABE423200E01A45 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					02D8D8DF2ABE423700E01A45 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02D8D8CE2ABE423200E01A45;
+					};
+					02D8D8E92ABE423700E01A45 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02D8D8CE2ABE423200E01A45;
+					};
+				};
+			};
+			buildConfigurationList = 02D8D8CA2ABE423200E01A45 /* Build configuration list for PBXProject "Polaris" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02D8D8C62ABE423200E01A45;
+			productRefGroup = 02D8D8D02ABE423200E01A45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02D8D8CE2ABE423200E01A45 /* Polaris */,
+				02D8D8DF2ABE423700E01A45 /* PolarisTests */,
+				02D8D8E92ABE423700E01A45 /* PolarisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02D8D8CD2ABE423200E01A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D8D8DB2ABE423600E01A45 /* Preview Assets.xcassets in Resources */,
+				02D8D8D72ABE423600E01A45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8DE2ABE423700E01A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8E82ABE423700E01A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02D8D8CB2ABE423200E01A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C98992AC34FCE00F6BEBD /* ListViewModel.swift in Sources */,
+				021C98972AC34FAB00F6BEBD /* ListView.swift in Sources */,
+				021C98952AC34F3E00F6BEBD /* ListItem.swift in Sources */,
+				021C989B2AC3679F00F6BEBD /* ListItemView.swift in Sources */,
+				02D8D8D52ABE423200E01A45 /* ContentView.swift in Sources */,
+				02D8D8D32ABE423200E01A45 /* PolarisApp.swift in Sources */,
+				021C989E2AC367F300F6BEBD /* ListItemViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8DC2ABE423700E01A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D8D8E62ABE423700E01A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D8D8EF2ABE423700E01A45 /* PolarisUITests.swift in Sources */,
+				02D8D8F12ABE423700E01A45 /* PolarisUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02D8D8E22ABE423700E01A45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D8D8CE2ABE423200E01A45 /* Polaris */;
+			targetProxy = 02D8D8E12ABE423700E01A45 /* PBXContainerItemProxy */;
+		};
+		02D8D8EC2ABE423700E01A45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D8D8CE2ABE423200E01A45 /* Polaris */;
+			targetProxy = 02D8D8EB2ABE423700E01A45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02D8D8F22ABE423700E01A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02D8D8F32ABE423700E01A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		02D8D8F52ABE423700E01A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Polaris/Polaris.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Polaris/Preview Content\"";
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.Polaris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02D8D8F62ABE423700E01A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Polaris/Polaris.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Polaris/Preview Content\"";
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.Polaris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02D8D8F82ABE423700E01A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+			};
+			name = Debug;
+		};
+		02D8D8F92ABE423700E01A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+			};
+			name = Release;
+		};
+		02D8D8FB2ABE423700E01A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Polaris;
+			};
+			name = Debug;
+		};
+		02D8D8FC2ABE423700E01A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Polaris;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02D8D8CA2ABE423200E01A45 /* Build configuration list for PBXProject "Polaris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D8D8F22ABE423700E01A45 /* Debug */,
+				02D8D8F32ABE423700E01A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D8D8F42ABE423700E01A45 /* Build configuration list for PBXNativeTarget "Polaris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D8D8F52ABE423700E01A45 /* Debug */,
+				02D8D8F62ABE423700E01A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D8D8F72ABE423700E01A45 /* Build configuration list for PBXNativeTarget "PolarisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D8D8F82ABE423700E01A45 /* Debug */,
+				02D8D8F92ABE423700E01A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D8D8FA2ABE423700E01A45 /* Build configuration list for PBXNativeTarget "PolarisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D8D8FB2ABE423700E01A45 /* Debug */,
+				02D8D8FC2ABE423700E01A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02D8D8C72ABE423200E01A45 /* Project object */;
+}
