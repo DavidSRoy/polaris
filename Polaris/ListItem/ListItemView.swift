@@ -16,13 +16,14 @@ struct ListItemView: View {
     
     var body: some View {
         HStack {
-            Text(listItemViewModel.name)
-            Spacer()
             Button {
                 listItemViewModel.toggleIsMarkedComplete()
             } label: {
-                Image(systemName: listItemViewModel.isMarkedComplete ? "checkmark.circle.fill" : "circle")
+                Image(systemName: listItemViewModel.isMarkedComplete ? "checkmark.square.fill" : "square")
+                    .font(.title)
             }
+            TextField(listItemViewModel.name, text: $listItemViewModel.name)
+                .font(.title)
         }
     }
 }
@@ -30,8 +31,7 @@ struct ListItemView: View {
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
         let listItem = ListItem(name: "Test1",
-                                isMarkedComplete: true,
-                                id: 32)
+                                isMarkedComplete: true)
         ListItemView(listItem: listItem)
     }
 }

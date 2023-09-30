@@ -11,11 +11,15 @@ struct ListView: View {
     @StateObject private var listViewModel = ListViewModel()
     var body: some View {
         VStack {
-            List(listViewModel.listItems, id: \.id) { listItem in
-                ListItemView(listItem: listItem)
+            ForEach(listViewModel.listItems, id: \.id) { listItem in
+                HStack {
+                    ListItemView(listItem: listItem)
+                    Spacer()
+                }
+                .padding([.leading, .trailing, .bottom])
             }
         }
-        .padding()
+        .padding(.all)
     }
 }
 

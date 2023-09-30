@@ -11,5 +11,12 @@ struct ListItem {
     var name: String
     var isMarkedComplete: Bool
     var markedCompleteDate: Date?
-    var id: Int
+    var id: String
+    
+    init(name: String, isMarkedComplete: Bool, markedCompleteDate: Date? = nil) {
+        self.name = name
+        self.isMarkedComplete = isMarkedComplete
+        self.markedCompleteDate = markedCompleteDate
+        self.id = UUID().uuidString
+    }
 }
