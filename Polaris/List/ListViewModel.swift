@@ -10,19 +10,23 @@ import FirebaseFirestore
 import FirebaseAuth
 
 final class ListViewModel: ObservableObject {
-    
+
     @Published var listItems: [ListItem] = []
-    
+
     init() {
         loadListItems()
     }
+
+    func add(_ listItem: ListItem) {
+        listItems.append(listItem)
+    }
     
     func loadListItems() {
-        let db = Firestore.firestore()
-        let listItemsRef = db.document("users/test-user-id/lists/list-id")
-                
+        let database = Firestore.firestore()
+        let listItemsRef = database.document("users/test-user-id/lists/list-id")
+
         listItemsRef.getDocument { (document, error) in
-            print("document = \(document)")
+            print("document = \(String(describing: document))")
             if let document = document, document.exists {
                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                 print("Document data: \(dataDescription)")
@@ -30,8 +34,7 @@ final class ListViewModel: ObservableObject {
                 print("Document does not exist")
             }
         }
-        
-        
+
         listItems = [
             ListItem(name: "Test1", isMarkedComplete: false),
             ListItem(name: "Test2", isMarkedComplete: true),
@@ -39,7 +42,4 @@ final class ListViewModel: ObservableObject {
             ListItem(name: "Test4", isMarkedComplete: false)
         ]
     }
-    
 }
-
-

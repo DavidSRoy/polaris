@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ListItemView: View {
-    @StateObject private var listItemViewModel: ListItemViewModel
-    
-    init(listItem: ListItem) {
+    @StateObject var listItemViewModel: ListItemViewModel
+
+    private var onDelete: () -> Void
+
+    init(listItem: ListItem, onDelete: @escaping () -> Void) {
         self._listItemViewModel = StateObject(wrappedValue: ListItemViewModel(listItem: listItem))
+        self.onDelete = onDelete
     }
-    
+
     var body: some View {
         HStack {
             Button {
@@ -23,15 +26,34 @@ struct ListItemView: View {
                     .font(.title)
             }
             TextField(listItemViewModel.name, text: $listItemViewModel.name)
-                .font(.title)
+//                .font(.title)
+        }
+        .swipeActions(allowsFullSwipe: true) {
+            Button {
+                onDelete()
+            } label: {
+                Text("Delete")
+            }
+            .tint(.red)
         }
     }
 }
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        let listItem = ListItem(name: "Test1",
-                                isMarkedComplete: true)
-        ListItemView(listItem: listItem)
+        let listItems =
+        [
+            ListItem(name: "Test1", isMarkedComplete: true),
+            ListItem(name: "Test2", isMarkedComplete: false),
+            ListItem(name: "Test3", isMarkedComplete: true)
+        ]
+
+        List {
+            ForEach(listItems, id: \.id) { listItem in
+                ListItemView(listItem: listItem) {
+                    print("Preview: deleting \(listItem.id)")
+                }
+            }
+        }
     }
 }

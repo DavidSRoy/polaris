@@ -11,16 +11,17 @@ import FirebaseAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions:
+                        [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         FirebaseApp.configure()
         self.signIn()
         return true
     }
-    
+
     private func signIn() {
         Auth.auth().signInAnonymously { authResult, error in
-            print("AuthResult = \(authResult)")
-            print("Error = \(error)")
+            print("AuthResult = \(String(describing: authResult))")
+            print("Error = \(String(describing: error))")
         }
     }
 }
@@ -28,7 +29,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct PolarisApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
     var body: some Scene {
         WindowGroup {
             ListView()

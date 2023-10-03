@@ -12,7 +12,11 @@ struct ListItem {
     var isMarkedComplete: Bool
     var markedCompleteDate: Date?
     var id: String
-    
+
+     init(name: String) {
+        self.init(name: name, isMarkedComplete: false)
+    }
+
     init(name: String, isMarkedComplete: Bool, markedCompleteDate: Date? = nil) {
         self.name = name
         self.isMarkedComplete = isMarkedComplete

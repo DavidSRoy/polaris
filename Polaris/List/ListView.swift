@@ -10,16 +10,32 @@ import SwiftUI
 struct ListView: View {
     @StateObject private var listViewModel = ListViewModel()
     var body: some View {
-        VStack {
-            ForEach(listViewModel.listItems, id: \.id) { listItem in
-                HStack {
-                    ListItemView(listItem: listItem)
-                    Spacer()
+        NavigationView {
+                List {
+                    ForEach(listViewModel.listItems, id: \.id) { listItem in
+                        HStack {
+                            ListItemView(listItem: listItem) {
+                                print("Deleted listItem id = \(listItem.id): \(listItem.name)")
+                                listViewModel.listItems.removeAll { otherItem in
+                                    otherItem.id == listItem.id
+                                }
+                            }
+                            Spacer()
+                        }
+                    }
+                    HStack {
+                        Spacer()
+                        Button {
+                            listViewModel.add(ListItem(name: ""))
+                        } label: {
+                            Image(systemName: "plus")
+                                .font(.title)
+                        }
+                        Spacer()
+                    }
                 }
-                .padding([.leading, .trailing, .bottom])
-            }
+                .navigationTitle("My List")
         }
-        .padding(.all)
     }
 }
 
@@ -28,4 +44,3 @@ struct ListView_Previews: PreviewProvider {
         ListView()
     }
 }
-
