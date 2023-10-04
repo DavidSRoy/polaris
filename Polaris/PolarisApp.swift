@@ -6,23 +6,15 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseAuth
+import CloudConnectionLayer
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions:
                         [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        FirebaseApp.configure()
-        self.signIn()
+        FirebaseHelper.shared.signInAnonymously()
         return true
-    }
-
-    private func signIn() {
-        Auth.auth().signInAnonymously { authResult, error in
-            print("AuthResult = \(String(describing: authResult))")
-            print("Error = \(String(describing: error))")
-        }
     }
 }
 

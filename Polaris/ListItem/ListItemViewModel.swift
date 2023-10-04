@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PolarisCore
 
 final class ListItemViewModel: ObservableObject {
     // TODO: Add thread safety

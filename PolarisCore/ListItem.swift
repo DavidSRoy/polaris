@@ -5,15 +5,13 @@
 //  Created by David Roy on 9/26/23.
 //
 
-import Foundation
+public struct ListItem {
+    public var name: String
+    public var isMarkedComplete: Bool
+    public var markedCompleteDate: Date?
+    public var id: String
 
-struct ListItem {
-    var name: String
-    var isMarkedComplete: Bool
-    var markedCompleteDate: Date?
-    var id: String
-
-     init(name: String) {
+    public init(name: String) {
         self.init(name: name, isMarkedComplete: false)
     }
 

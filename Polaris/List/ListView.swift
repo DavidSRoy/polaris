@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PolarisCore
 
 struct ListView: View {
     @StateObject private var listViewModel = ListViewModel()

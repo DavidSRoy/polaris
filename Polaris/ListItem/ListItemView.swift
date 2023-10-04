@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PolarisCore
 
 struct ListItemView: View {
     @StateObject var listItemViewModel: ListItemViewModel
@@ -26,13 +27,13 @@ struct ListItemView: View {
                     .font(.title)
             }
             TextField(listItemViewModel.name, text: $listItemViewModel.name)
-//                .font(.title)
+                .font(.title)
         }
         .swipeActions(allowsFullSwipe: true) {
             Button {
                 onDelete()
             } label: {
-                Text("Delete")
+                Image(systemName: "trash")
             }
             .tint(.red)
         }
@@ -43,9 +44,9 @@ struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
         let listItems =
         [
-            ListItem(name: "Test1", isMarkedComplete: true),
-            ListItem(name: "Test2", isMarkedComplete: false),
-            ListItem(name: "Test3", isMarkedComplete: true)
+            ListItem(name: "Test1"),
+            ListItem(name: "Test2"),
+            ListItem(name: "Test3")
         ]
 
         List {

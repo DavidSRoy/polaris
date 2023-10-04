@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021C98952AC34F3E00F6BEBD /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98942AC34F3E00F6BEBD /* ListItem.swift */; };
 		021C98972AC34FAB00F6BEBD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98962AC34FAB00F6BEBD /* ListView.swift */; };
 		021C98992AC34FCE00F6BEBD /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98982AC34FCE00F6BEBD /* ListViewModel.swift */; };
 		021C989B2AC3679F00F6BEBD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C989A2AC3679F00F6BEBD /* ListItemView.swift */; };
@@ -32,6 +31,26 @@
 		02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8E42ABE423700E01A45 /* PolarisTests.swift */; };
 		02D8D8EF2ABE423700E01A45 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */; };
 		02D8D8F12ABE423700E01A45 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */; };
+		02FA9C7F2ACE11C600BBA250 /* CloudConnectionLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C7E2ACE11C600BBA250 /* CloudConnectionLayer.docc */; };
+		02FA9C852ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */; };
+		02FA9C8C2ACE11C600BBA250 /* CloudConnectionLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C8B2ACE11C600BBA250 /* CloudConnectionLayerTests.swift */; };
+		02FA9C8D2ACE11C600BBA250 /* CloudConnectionLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FA9C7D2ACE11C600BBA250 /* CloudConnectionLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FA9C902ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */; };
+		02FA9C912ACE11C600BBA250 /* CloudConnectionLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02FA9C992ACE11D000BBA250 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C732ACDF95600BBA250 /* FirebaseHelper.swift */; };
+		02FA9CA22ACE145500BBA250 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 02FA9CA12ACE145500BBA250 /* FirebaseAnalytics */; };
+		02FA9CA42ACE145500BBA250 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02FA9CA32ACE145500BBA250 /* FirebaseAuth */; };
+		02FA9CA62ACE145500BBA250 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 02FA9CA52ACE145500BBA250 /* FirebaseFirestore */; };
+		02FA9CA82ACE145500BBA250 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02FA9CA72ACE145500BBA250 /* FirebaseFirestoreSwift */; };
+		02FA9CB22ACE14D600BBA250 /* PolarisCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9CB12ACE14D600BBA250 /* PolarisCore.docc */; };
+		02FA9CB82ACE14D700BBA250 /* PolarisCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */; };
+		02FA9CBF2ACE14D700BBA250 /* PolarisCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9CBE2ACE14D700BBA250 /* PolarisCoreTests.swift */; };
+		02FA9CC02ACE14D700BBA250 /* PolarisCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FA9CB02ACE14D600BBA250 /* PolarisCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FA9CC32ACE14D700BBA250 /* PolarisCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */; };
+		02FA9CC42ACE14D700BBA250 /* PolarisCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02FA9CCB2ACE14E400BBA250 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C98942AC34F3E00F6BEBD /* ListItem.swift */; };
+		02FA9CCC2ACE150400BBA250 /* PolarisCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */; };
+		02FA9CCD2ACE150400BBA250 /* PolarisCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +68,82 @@
 			remoteGlobalIDString = 02D8D8CE2ABE423200E01A45;
 			remoteInfo = Polaris;
 		};
+		02FA9C862ACE11C600BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02FA9C7A2ACE11C600BBA250;
+			remoteInfo = CloudConnectionLayer;
+		};
+		02FA9C882ACE11C600BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D8D8CE2ABE423200E01A45;
+			remoteInfo = Polaris;
+		};
+		02FA9C8E2ACE11C600BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02FA9C7A2ACE11C600BBA250;
+			remoteInfo = CloudConnectionLayer;
+		};
+		02FA9CB92ACE14D700BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02FA9CAD2ACE14D600BBA250;
+			remoteInfo = PolarisCore;
+		};
+		02FA9CBB2ACE14D700BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D8D8CE2ABE423200E01A45;
+			remoteInfo = Polaris;
+		};
+		02FA9CC12ACE14D700BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02FA9CAD2ACE14D600BBA250;
+			remoteInfo = PolarisCore;
+		};
+		02FA9CCE2ACE150400BBA250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D8D8C72ABE423200E01A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02FA9CAD2ACE14D600BBA250;
+			remoteInfo = PolarisCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02FA9C952ACE11C600BBA250 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02FA9CC42ACE14D700BBA250 /* PolarisCore.framework in Embed Frameworks */,
+				02FA9C912ACE11C600BBA250 /* CloudConnectionLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CD02ACE150500BBA250 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02FA9CCD2ACE150400BBA250 /* PolarisCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		021C98942AC34F3E00F6BEBD /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -69,6 +163,17 @@
 		02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02FA9C732ACDF95600BBA250 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudConnectionLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FA9C7D2ACE11C600BBA250 /* CloudConnectionLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudConnectionLayer.h; sourceTree = "<group>"; };
+		02FA9C7E2ACE11C600BBA250 /* CloudConnectionLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CloudConnectionLayer.docc; sourceTree = "<group>"; };
+		02FA9C842ACE11C600BBA250 /* CloudConnectionLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudConnectionLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FA9C8B2ACE11C600BBA250 /* CloudConnectionLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudConnectionLayerTests.swift; sourceTree = "<group>"; };
+		02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PolarisCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FA9CB02ACE14D600BBA250 /* PolarisCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolarisCore.h; sourceTree = "<group>"; };
+		02FA9CB12ACE14D600BBA250 /* PolarisCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PolarisCore.docc; sourceTree = "<group>"; };
+		02FA9CB72ACE14D700BBA250 /* PolarisCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FA9CBE2ACE14D700BBA250 /* PolarisCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisCoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +181,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FA9C902ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */,
 				021D474A2AC4DAC800F90B78 /* FirebaseRemoteConfig in Frameworks */,
 				021D473C2AC4DAC800F90B78 /* FirebaseAnalyticsSwift in Frameworks */,
 				021D473E2AC4DAC800F90B78 /* FirebaseAppCheck in Frameworks */,
+				02FA9CC32ACE14D700BBA250 /* PolarisCore.framework in Frameworks */,
 				021D47422AC4DAC800F90B78 /* FirebaseCrashlytics in Frameworks */,
 				021D47482AC4DAC800F90B78 /* FirebaseFunctions in Frameworks */,
 				021D47462AC4DAC800F90B78 /* FirebaseFirestoreSwift in Frameworks */,
@@ -103,6 +210,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02FA9C782ACE11C600BBA250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9CA22ACE145500BBA250 /* FirebaseAnalytics in Frameworks */,
+				02FA9CCC2ACE150400BBA250 /* PolarisCore.framework in Frameworks */,
+				02FA9CA42ACE145500BBA250 /* FirebaseAuth in Frameworks */,
+				02FA9CA62ACE145500BBA250 /* FirebaseFirestore in Frameworks */,
+				02FA9CA82ACE145500BBA250 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9C812ACE11C600BBA250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9C852ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CAB2ACE14D600BBA250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CB42ACE14D700BBA250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9CB82ACE14D700BBA250 /* PolarisCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -118,7 +260,6 @@
 		021C989C2AC367D700F6BEBD /* ListItem */ = {
 			isa = PBXGroup;
 			children = (
-				021C98942AC34F3E00F6BEBD /* ListItem.swift */,
 				021C989A2AC3679F00F6BEBD /* ListItemView.swift */,
 				021C989D2AC367F300F6BEBD /* ListItemViewModel.swift */,
 			);
@@ -132,7 +273,12 @@
 				02D8D8D12ABE423200E01A45 /* Polaris */,
 				02D8D8E32ABE423700E01A45 /* PolarisTests */,
 				02D8D8ED2ABE423700E01A45 /* PolarisUITests */,
+				02FA9C7C2ACE11C600BBA250 /* CloudConnectionLayer */,
+				02FA9C8A2ACE11C600BBA250 /* CloudConnectionLayerTests */,
+				02FA9CAF2ACE14D600BBA250 /* PolarisCore */,
+				02FA9CBD2ACE14D700BBA250 /* PolarisCoreTests */,
 				02D8D8D02ABE423200E01A45 /* Products */,
+				02FA9CA02ACE141C00BBA250 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +288,10 @@
 				02D8D8CF2ABE423200E01A45 /* Polaris.app */,
 				02D8D8E02ABE423700E01A45 /* PolarisTests.xctest */,
 				02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */,
+				02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */,
+				02FA9C842ACE11C600BBA250 /* CloudConnectionLayerTests.xctest */,
+				02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */,
+				02FA9CB72ACE14D700BBA250 /* PolarisCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,7 +335,69 @@
 			path = PolarisUITests;
 			sourceTree = "<group>";
 		};
+		02FA9C7C2ACE11C600BBA250 /* CloudConnectionLayer */ = {
+			isa = PBXGroup;
+			children = (
+				02FA9C732ACDF95600BBA250 /* FirebaseHelper.swift */,
+				02FA9C7D2ACE11C600BBA250 /* CloudConnectionLayer.h */,
+				02FA9C7E2ACE11C600BBA250 /* CloudConnectionLayer.docc */,
+			);
+			path = CloudConnectionLayer;
+			sourceTree = "<group>";
+		};
+		02FA9C8A2ACE11C600BBA250 /* CloudConnectionLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				02FA9C8B2ACE11C600BBA250 /* CloudConnectionLayerTests.swift */,
+			);
+			path = CloudConnectionLayerTests;
+			sourceTree = "<group>";
+		};
+		02FA9CA02ACE141C00BBA250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02FA9CAF2ACE14D600BBA250 /* PolarisCore */ = {
+			isa = PBXGroup;
+			children = (
+				021C98942AC34F3E00F6BEBD /* ListItem.swift */,
+				02FA9CB02ACE14D600BBA250 /* PolarisCore.h */,
+				02FA9CB12ACE14D600BBA250 /* PolarisCore.docc */,
+			);
+			path = PolarisCore;
+			sourceTree = "<group>";
+		};
+		02FA9CBD2ACE14D700BBA250 /* PolarisCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				02FA9CBE2ACE14D700BBA250 /* PolarisCoreTests.swift */,
+			);
+			path = PolarisCoreTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02FA9C762ACE11C600BBA250 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9C8D2ACE11C600BBA250 /* CloudConnectionLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CA92ACE14D600BBA250 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9CC02ACE14D700BBA250 /* PolarisCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		02D8D8CE2ABE423200E01A45 /* Polaris */ = {
@@ -196,10 +408,13 @@
 				02D8D8CC2ABE423200E01A45 /* Frameworks */,
 				02D8D8CD2ABE423200E01A45 /* Resources */,
 				021D474D2AC62E4A00F90B78 /* Run Script */,
+				02FA9C952ACE11C600BBA250 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				02FA9C8F2ACE11C600BBA250 /* PBXTargetDependency */,
+				02FA9CC22ACE14D700BBA250 /* PBXTargetDependency */,
 			);
 			name = Polaris;
 			packageProductDependencies = (
@@ -254,6 +469,91 @@
 			productReference = 02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		02FA9C7A2ACE11C600BBA250 /* CloudConnectionLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FA9C922ACE11C600BBA250 /* Build configuration list for PBXNativeTarget "CloudConnectionLayer" */;
+			buildPhases = (
+				02FA9C762ACE11C600BBA250 /* Headers */,
+				02FA9C772ACE11C600BBA250 /* Sources */,
+				02FA9C782ACE11C600BBA250 /* Frameworks */,
+				02FA9C792ACE11C600BBA250 /* Resources */,
+				02FA9CD02ACE150500BBA250 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02FA9C9B2ACE120300BBA250 /* PBXTargetDependency */,
+				02FA9C9D2ACE120300BBA250 /* PBXTargetDependency */,
+				02FA9C9F2ACE120300BBA250 /* PBXTargetDependency */,
+				02FA9CCF2ACE150400BBA250 /* PBXTargetDependency */,
+			);
+			name = CloudConnectionLayer;
+			packageProductDependencies = (
+				02FA9CA12ACE145500BBA250 /* FirebaseAnalytics */,
+				02FA9CA32ACE145500BBA250 /* FirebaseAuth */,
+				02FA9CA52ACE145500BBA250 /* FirebaseFirestore */,
+				02FA9CA72ACE145500BBA250 /* FirebaseFirestoreSwift */,
+			);
+			productName = CloudConnectionLayer;
+			productReference = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		02FA9C832ACE11C600BBA250 /* CloudConnectionLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FA9C962ACE11C600BBA250 /* Build configuration list for PBXNativeTarget "CloudConnectionLayerTests" */;
+			buildPhases = (
+				02FA9C802ACE11C600BBA250 /* Sources */,
+				02FA9C812ACE11C600BBA250 /* Frameworks */,
+				02FA9C822ACE11C600BBA250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02FA9C872ACE11C600BBA250 /* PBXTargetDependency */,
+				02FA9C892ACE11C600BBA250 /* PBXTargetDependency */,
+			);
+			name = CloudConnectionLayerTests;
+			productName = CloudConnectionLayerTests;
+			productReference = 02FA9C842ACE11C600BBA250 /* CloudConnectionLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02FA9CAD2ACE14D600BBA250 /* PolarisCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FA9CC52ACE14D700BBA250 /* Build configuration list for PBXNativeTarget "PolarisCore" */;
+			buildPhases = (
+				02FA9CA92ACE14D600BBA250 /* Headers */,
+				02FA9CAA2ACE14D600BBA250 /* Sources */,
+				02FA9CAB2ACE14D600BBA250 /* Frameworks */,
+				02FA9CAC2ACE14D600BBA250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolarisCore;
+			productName = PolarisCore;
+			productReference = 02FA9CAE2ACE14D600BBA250 /* PolarisCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		02FA9CB62ACE14D700BBA250 /* PolarisCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FA9CC82ACE14D700BBA250 /* Build configuration list for PBXNativeTarget "PolarisCoreTests" */;
+			buildPhases = (
+				02FA9CB32ACE14D700BBA250 /* Sources */,
+				02FA9CB42ACE14D700BBA250 /* Frameworks */,
+				02FA9CB52ACE14D700BBA250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02FA9CBA2ACE14D700BBA250 /* PBXTargetDependency */,
+				02FA9CBC2ACE14D700BBA250 /* PBXTargetDependency */,
+			);
+			name = PolarisCoreTests;
+			productName = PolarisCoreTests;
+			productReference = 02FA9CB72ACE14D700BBA250 /* PolarisCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,7 +561,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					02D8D8CE2ABE423200E01A45 = {
@@ -273,6 +573,20 @@
 					};
 					02D8D8E92ABE423700E01A45 = {
 						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 02D8D8CE2ABE423200E01A45;
+					};
+					02FA9C7A2ACE11C600BBA250 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					02FA9C832ACE11C600BBA250 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 02D8D8CE2ABE423200E01A45;
+					};
+					02FA9CAD2ACE14D600BBA250 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					02FA9CB62ACE14D700BBA250 = {
+						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 02D8D8CE2ABE423200E01A45;
 					};
 				};
@@ -296,6 +610,10 @@
 				02D8D8CE2ABE423200E01A45 /* Polaris */,
 				02D8D8DF2ABE423700E01A45 /* PolarisTests */,
 				02D8D8E92ABE423700E01A45 /* PolarisUITests */,
+				02FA9C7A2ACE11C600BBA250 /* CloudConnectionLayer */,
+				02FA9C832ACE11C600BBA250 /* CloudConnectionLayerTests */,
+				02FA9CAD2ACE14D600BBA250 /* PolarisCore */,
+				02FA9CB62ACE14D700BBA250 /* PolarisCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +642,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				021D472F2AC3980000F90B78 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9C792ACE11C600BBA250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9C822ACE11C600BBA250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CAC2ACE14D600BBA250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CB52ACE14D700BBA250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +703,6 @@
 			files = (
 				021C98992AC34FCE00F6BEBD /* ListViewModel.swift in Sources */,
 				021C98972AC34FAB00F6BEBD /* ListView.swift in Sources */,
-				021C98952AC34F3E00F6BEBD /* ListItem.swift in Sources */,
 				021C989B2AC3679F00F6BEBD /* ListItemView.swift in Sources */,
 				02D8D8D52ABE423200E01A45 /* ContentView.swift in Sources */,
 				02D8D8D32ABE423200E01A45 /* PolarisApp.swift in Sources */,
@@ -382,6 +727,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02FA9C772ACE11C600BBA250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9C992ACE11D000BBA250 /* FirebaseHelper.swift in Sources */,
+				02FA9C7F2ACE11C600BBA250 /* CloudConnectionLayer.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9C802ACE11C600BBA250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9C8C2ACE11C600BBA250 /* CloudConnectionLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CAA2ACE14D600BBA250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9CCB2ACE14E400BBA250 /* ListItem.swift in Sources */,
+				02FA9CB22ACE14D600BBA250 /* PolarisCore.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA9CB32ACE14D700BBA250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA9CBF2ACE14D700BBA250 /* PolarisCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -394,6 +773,53 @@
 			isa = PBXTargetDependency;
 			target = 02D8D8CE2ABE423200E01A45 /* Polaris */;
 			targetProxy = 02D8D8EB2ABE423700E01A45 /* PBXContainerItemProxy */;
+		};
+		02FA9C872ACE11C600BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02FA9C7A2ACE11C600BBA250 /* CloudConnectionLayer */;
+			targetProxy = 02FA9C862ACE11C600BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9C892ACE11C600BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D8D8CE2ABE423200E01A45 /* Polaris */;
+			targetProxy = 02FA9C882ACE11C600BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9C8F2ACE11C600BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02FA9C7A2ACE11C600BBA250 /* CloudConnectionLayer */;
+			targetProxy = 02FA9C8E2ACE11C600BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9C9B2ACE120300BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 02FA9C9A2ACE120300BBA250 /* FirebaseAuth */;
+		};
+		02FA9C9D2ACE120300BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 02FA9C9C2ACE120300BBA250 /* FirebaseFirestore */;
+		};
+		02FA9C9F2ACE120300BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 02FA9C9E2ACE120300BBA250 /* FirebaseFirestoreSwift */;
+		};
+		02FA9CBA2ACE14D700BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02FA9CAD2ACE14D600BBA250 /* PolarisCore */;
+			targetProxy = 02FA9CB92ACE14D700BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9CBC2ACE14D700BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D8D8CE2ABE423200E01A45 /* Polaris */;
+			targetProxy = 02FA9CBB2ACE14D700BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9CC22ACE14D700BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02FA9CAD2ACE14D600BBA250 /* PolarisCore */;
+			targetProxy = 02FA9CC12ACE14D700BBA250 /* PBXContainerItemProxy */;
+		};
+		02FA9CCF2ACE150400BBA250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02FA9CAD2ACE14D600BBA250 /* PolarisCore */;
+			targetProxy = 02FA9CCE2ACE150400BBA250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,6 +936,7 @@
 		02D8D8F52ABE423700E01A45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Polaris/Polaris.entitlements;
@@ -548,6 +975,7 @@
 		02D8D8F62ABE423700E01A45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Polaris/Polaris.entitlements;
@@ -673,6 +1101,266 @@
 			};
 			name = Release;
 		};
+		02FA9C932ACE11C600BBA250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.CloudConnectionLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		02FA9C942ACE11C600BBA250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.CloudConnectionLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02FA9C972ACE11C600BBA250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.CloudConnectionLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+			};
+			name = Debug;
+		};
+		02FA9C982ACE11C600BBA250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.CloudConnectionLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02FA9CC62ACE14D700BBA250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		02FA9CC72ACE14D700BBA250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02FA9CC92ACE14D700BBA250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+			};
+			name = Debug;
+		};
+		02FA9CCA2ACE14D700BBA250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6V8TK6B35;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thrillersolutions.PolarisCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polaris.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Polaris";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -712,6 +1400,42 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		02FA9C922ACE11C600BBA250 /* Build configuration list for PBXNativeTarget "CloudConnectionLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FA9C932ACE11C600BBA250 /* Debug */,
+				02FA9C942ACE11C600BBA250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FA9C962ACE11C600BBA250 /* Build configuration list for PBXNativeTarget "CloudConnectionLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FA9C972ACE11C600BBA250 /* Debug */,
+				02FA9C982ACE11C600BBA250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FA9CC52ACE14D700BBA250 /* Build configuration list for PBXNativeTarget "PolarisCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FA9CC62ACE14D700BBA250 /* Debug */,
+				02FA9CC72ACE14D700BBA250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FA9CC82ACE14D700BBA250 /* Build configuration list for PBXNativeTarget "PolarisCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FA9CC92ACE14D700BBA250 /* Debug */,
+				02FA9CCA2ACE14D700BBA250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -720,7 +1444,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -775,6 +1499,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfigSwift;
+		};
+		02FA9C9A2ACE120300BBA250 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		02FA9C9C2ACE120300BBA250 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		02FA9C9E2ACE120300BBA250 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		02FA9CA12ACE145500BBA250 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		02FA9CA32ACE145500BBA250 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		02FA9CA52ACE145500BBA250 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		02FA9CA72ACE145500BBA250 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 021D47382AC4DAC800F90B78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
