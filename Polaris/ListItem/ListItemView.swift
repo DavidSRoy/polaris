@@ -13,7 +13,7 @@ struct ListItemView: View {
 
     private var onDelete: () -> Void
 
-    init(listItem: ListItem, onDelete: @escaping () -> Void) {
+    init(listItem: PolarisListItem, onDelete: @escaping () -> Void) {
         self._listItemViewModel = StateObject(wrappedValue: ListItemViewModel(listItem: listItem))
         self.onDelete = onDelete
     }
@@ -44,9 +44,9 @@ struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
         let listItems =
         [
-            ListItem(name: "Test1"),
-            ListItem(name: "Test2"),
-            ListItem(name: "Test3")
+            ConcreteListItem(name: "Test1"),
+            ConcreteListItem(name: "Test2"),
+            ConcreteListItem(name: "Test3")
         ]
 
         List {

@@ -27,7 +27,7 @@ struct ListView: View {
                     HStack {
                         Spacer()
                         Button {
-                            listViewModel.add(ListItem(name: ""))
+                            listViewModel.add(ConcreteListItem(name: ""))
                         } label: {
                             Image(systemName: "plus")
                                 .font(.title)

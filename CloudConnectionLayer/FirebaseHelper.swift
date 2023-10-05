@@ -47,10 +47,10 @@ public final class FirebaseHelper: CloudConnectionHelper {
         }
 
         return [
-            ListItem(name: "Test1"),
-            ListItem(name: "Test2"),
-            ListItem(name: "Test3"),
-            ListItem(name: "Test4")
+            ConcreteListItem(name: "Test1"),
+            ConcreteListItem(name: "Test2"),
+            ConcreteListItem(name: "Test3"),
+            ConcreteListItem(name: "Test4")
         ]
     }
 }

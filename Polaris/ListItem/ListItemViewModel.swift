@@ -29,9 +29,9 @@ final class ListItemViewModel: ObservableObject {
         }
     }
 
-    private var listItem: ListItem
+    private var listItem: PolarisListItem
 
-    init(listItem: ListItem) {
+    init(listItem: PolarisListItem) {
         self.listItem = listItem
         setProperties()
     }
@@ -42,7 +42,7 @@ final class ListItemViewModel: ObservableObject {
         self.markedCompleteDate = listItem.markedCompleteDate
     }
 
-    func listItemDidChange(to newListItem: ListItem) {
+    func listItemDidChange(to newListItem: PolarisListItem) {
         self.listItem = newListItem
         setProperties()
     }

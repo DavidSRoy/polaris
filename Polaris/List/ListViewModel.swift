@@ -10,13 +10,14 @@ import PolarisCore
 
 final class ListViewModel: ObservableObject {
 
-    @Published var listItems: [ListItem] = []
+    @Published var listItems: [PolarisListItem] = []
 
     init() {
         listItems = FirebaseHelper.shared.loadListItems(for: "test", listId: "test")
+            .map { ConcreteListItem(from: $0) }
     }
 
-    func add(_ listItem: ListItem) {
+    func add(_ listItem: PolarisListItem) {
         listItems.append(listItem)
     }
 }
