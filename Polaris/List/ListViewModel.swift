@@ -8,7 +8,6 @@
 import CloudConnectionLayer
 import PolarisCore
 
-
 final class ListViewModel: ObservableObject {
 
     @Published var listItems: [ListItem] = []
@@ -20,5 +19,4 @@ final class ListViewModel: ObservableObject {
     func add(_ listItem: ListItem) {
         listItems.append(listItem)
     }
-    
 }
