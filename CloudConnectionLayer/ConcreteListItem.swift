@@ -8,11 +8,7 @@
 import PolarisCore
 
 class ConcreteListItem: ListItem {
-    var name: String {
-        didSet {
-            print("GOLF_HOTEL cloud layer name set to \(name)")
-        }
-    }
+    var name: String
     var isMarkedComplete: Bool
     var markedCompleteDate: Date?
     var id: String

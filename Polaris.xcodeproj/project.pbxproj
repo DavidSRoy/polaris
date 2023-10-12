@@ -14,6 +14,7 @@
 		021D472D2AC3980000F90B78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 021D472C2AC3980000F90B78 /* GoogleService-Info.plist */; };
 		021D472E2AC3980000F90B78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 021D472C2AC3980000F90B78 /* GoogleService-Info.plist */; };
 		021D472F2AC3980000F90B78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 021D472C2AC3980000F90B78 /* GoogleService-Info.plist */; };
+		0274012B2AD5FEF7005B8268 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274012A2AD5FEF7005B8268 /* HomeView.swift */; };
 		02D8D8D32ABE423200E01A45 /* PolarisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8D22ABE423200E01A45 /* PolarisApp.swift */; };
 		02D8D8D52ABE423200E01A45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8D42ABE423200E01A45 /* ContentView.swift */; };
 		02D8D8D72ABE423600E01A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D8D8D62ABE423600E01A45 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8E42ABE423700E01A45 /* PolarisTests.swift */; };
 		02D8D8EF2ABE423700E01A45 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */; };
 		02D8D8F12ABE423700E01A45 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */; };
+		02F58DA12AD87BB500FD6FDF /* ListItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */; };
 		02FA9C7F2ACE11C600BBA250 /* CloudConnectionLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C7E2ACE11C600BBA250 /* CloudConnectionLayer.docc */; };
 		02FA9C852ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */; };
 		02FA9C8C2ACE11C600BBA250 /* CloudConnectionLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C8B2ACE11C600BBA250 /* CloudConnectionLayerTests.swift */; };
@@ -144,6 +146,7 @@
 		021C989A2AC3679F00F6BEBD /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		021C989D2AC367F300F6BEBD /* ListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModel.swift; sourceTree = "<group>"; };
 		021D472C2AC3980000F90B78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0274012A2AD5FEF7005B8268 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		02D8D8CF2ABE423200E01A45 /* Polaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D8D8D22ABE423200E01A45 /* PolarisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisApp.swift; sourceTree = "<group>"; };
 		02D8D8D42ABE423200E01A45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 		02D8D8EA2ABE423700E01A45 /* PolarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModelTests.swift; sourceTree = "<group>"; };
 		02FA9C732ACDF95600BBA250 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudConnectionLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FA9C7D2ACE11C600BBA250 /* CloudConnectionLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudConnectionLayer.h; sourceTree = "<group>"; };
@@ -251,6 +255,14 @@
 			path = ListItem;
 			sourceTree = "<group>";
 		};
+		027401292AD5FED7005B8268 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0274012A2AD5FEF7005B8268 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		02D8D8C62ABE423200E01A45 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +296,7 @@
 		02D8D8D12ABE423200E01A45 /* Polaris */ = {
 			isa = PBXGroup;
 			children = (
+				027401292AD5FED7005B8268 /* Home */,
 				021C989C2AC367D700F6BEBD /* ListItem */,
 				021C98932AC34F2400F6BEBD /* List */,
 				02D8D8D22ABE423200E01A45 /* PolarisApp.swift */,
@@ -307,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				02D8D8E42ABE423700E01A45 /* PolarisTests.swift */,
+				02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */,
 			);
 			path = PolarisTests;
 			sourceTree = "<group>";
@@ -682,6 +696,7 @@
 				021C989B2AC3679F00F6BEBD /* ListItemView.swift in Sources */,
 				02D8D8D52ABE423200E01A45 /* ContentView.swift in Sources */,
 				02FA9CD42ACF247F00BBA250 /* ConcreteListItem.swift in Sources */,
+				0274012B2AD5FEF7005B8268 /* HomeView.swift in Sources */,
 				02D8D8D32ABE423200E01A45 /* PolarisApp.swift in Sources */,
 				021C989E2AC367F300F6BEBD /* ListItemViewModel.swift in Sources */,
 			);
@@ -692,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */,
+				02F58DA12AD87BB500FD6FDF /* ListItemViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

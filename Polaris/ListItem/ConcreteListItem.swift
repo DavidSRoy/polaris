@@ -15,11 +15,7 @@ protocol PolarisListItem {
 }
 
 class ConcreteListItem: PolarisListItem {
-    var name: String {
-        didSet {
-            print("GOLF_HOTEL Polaris name set to \(name)")
-        }
-    }
+    var name: String
     var isMarkedComplete: Bool
     var markedCompleteDate: Date?
     var id: String
