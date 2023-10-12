@@ -16,10 +16,7 @@ struct ListView: View {
                     ForEach(listViewModel.listItems, id: \.id) { listItem in
                         HStack {
                             ListItemView(listItem: listItem) {
-                                print("Deleted listItem id = \(listItem.id): \(listItem.name)")
-                                listViewModel.listItems.removeAll { otherItem in
-                                    otherItem.id == listItem.id
-                                }
+                                listViewModel.delete(listItem)
                             }
                             Spacer()
                         }

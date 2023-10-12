@@ -23,6 +23,7 @@
 		02D8D8EF2ABE423700E01A45 /* PolarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */; };
 		02D8D8F12ABE423700E01A45 /* PolarisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */; };
 		02F58DA12AD87BB500FD6FDF /* ListItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */; };
+		02F58DA32AD884FA00FD6FDF /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F58DA22AD884FA00FD6FDF /* ListViewModelTests.swift */; };
 		02FA9C7F2ACE11C600BBA250 /* CloudConnectionLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C7E2ACE11C600BBA250 /* CloudConnectionLayer.docc */; };
 		02FA9C852ACE11C600BBA250 /* CloudConnectionLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */; };
 		02FA9C8C2ACE11C600BBA250 /* CloudConnectionLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA9C8B2ACE11C600BBA250 /* CloudConnectionLayerTests.swift */; };
@@ -159,6 +160,7 @@
 		02D8D8EE2ABE423700E01A45 /* PolarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITests.swift; sourceTree = "<group>"; };
 		02D8D8F02ABE423700E01A45 /* PolarisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolarisUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemViewModelTests.swift; sourceTree = "<group>"; };
+		02F58DA22AD884FA00FD6FDF /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
 		02FA9C732ACDF95600BBA250 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		02FA9C7B2ACE11C600BBA250 /* CloudConnectionLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudConnectionLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FA9C7D2ACE11C600BBA250 /* CloudConnectionLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudConnectionLayer.h; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 			children = (
 				02D8D8E42ABE423700E01A45 /* PolarisTests.swift */,
 				02F58DA02AD87BB500FD6FDF /* ListItemViewModelTests.swift */,
+				02F58DA22AD884FA00FD6FDF /* ListViewModelTests.swift */,
 			);
 			path = PolarisTests;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 			files = (
 				02D8D8E52ABE423700E01A45 /* PolarisTests.swift in Sources */,
 				02F58DA12AD87BB500FD6FDF /* ListItemViewModelTests.swift in Sources */,
+				02F58DA32AD884FA00FD6FDF /* ListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,4 +20,11 @@ final class ListViewModel: ObservableObject {
     func add(_ listItem: PolarisListItem) {
         listItems.append(listItem)
     }
+
+    func delete(_ listItem: PolarisListItem) {
+        listItems.removeAll { otherItem in
+            otherItem.id == listItem.id
+        }
+        print("Deleted listItem id = \(listItem.id): \(listItem.name)")
+    }
 }
